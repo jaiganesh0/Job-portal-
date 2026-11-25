@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JobConnect - Online Job Portal</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><h1>Job<span>Connect</span></h1><p>Find a job, save it and apply in one place.</p></header>
+<main><div class="tools"><label class="sr" for="q">Search jobs</label><input id="q" type="search" placeholder="Search title, company or skill">
+<label class="sr" for="loc">Location</label><select id="loc"></select><label class="sr" for="type">Job type</label><select id="type"></select>
+<button id="savedOnly" type="button" class="chip" aria-pressed="false">Saved only</button></div>
+<p id="count" aria-live="polite"></p><div id="jobs" class="list"></div></main>
+<dialog id="dlg"><form id="apply" method="dialog"><h2 id="dt">Apply</h2><label>Full name<input id="an" required></label><label>Email<input id="ae" type="email" required></label>
+<label>Short note<textarea id="ac" rows="3"></textarea></label><div class="row"><button type="button" id="cancel" class="ghost">Cancel</button><button id="submitApply" type="submit" class="primary">Submit application</button></div></form></dialog>
+<script src="script.js"></script></body></html>
